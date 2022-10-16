@@ -42,6 +42,6 @@ $time = time();
 $commitMessage = ask("Commit message : ", "auto-update-{$time}");
 $pushBranch = ask("Push Branch : ");
 
-confirm("Commit this repo into {$pushBranch} branch with {$commitMessage}' as message ?") &&
+confirm("Commit this repo into {$pushBranch} branch with '{$commitMessage}' as message ?") &&
 
 runUpdate($commitMessage,$pushBranch );
